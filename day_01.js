@@ -62,10 +62,28 @@
 // let initialValue;
 // console.log(typeof initialValue);
 
-/* 3. Condiotionals - if, if-else, mutli-conditional if-else, continue, break------------------- */
+/* 3. Condiotionals - if, if-else, mutli-conditional if-else------------------- */
 
-if
+let num = 4;
+if(num< 5){
+    console.log("Number is less than 5.");
+}
 
+num = 12;
+if(num < 10){
+    console.log("Number is less than ")
+}else{
+    console.log("Number is greater than 10.")
+}
+
+num = 0;
+if(num==0){
+    console.log("Number is equal to 0.")
+}else if(num == 15){
+    console.log("Number is equal to 15.");
+}else{
+    console.log("Number is greater than 15.")
+}
 
 
 
