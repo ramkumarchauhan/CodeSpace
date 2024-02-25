@@ -13,6 +13,6 @@
     - splice() -> Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
     - shift() -> Removes the first element from an array.
     - unshift() -> Inserts the given values to the beginning of an array-like object.
-    - join() - Joins the array’s items into the string and returns that string.
+    - join() -> Joins the array’s items into the string and returns that string.
 
 */
