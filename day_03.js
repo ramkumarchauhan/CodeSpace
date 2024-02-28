@@ -14,7 +14,6 @@
     - forEach() -> Executes a callback function once for each array element.
     - map() -> Creates a new array with the results of calling a provided function on every element in the calling array.
     - filter() -> Creates a new array with all elements that pass the test implemented by the provided function.
-
 */
 
 // const cars = ["BMW","Tata","Safari","Mahindra"];
