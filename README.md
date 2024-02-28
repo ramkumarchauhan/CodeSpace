@@ -50,3 +50,12 @@
     <p>- Spread Syntax -> Used for Destructuring. It can expand iterable objects into multiple elements.</p>
     <p>- Template literals or String interpolation -> Allows for easier string interpolation and multiline strings using backticks (`) and ${}.</p>
     <p>- Destructuring Assignment -> Destructuring allows for extracting values from arrays or properties from objects into distinct
+
+<h4>Asynchronous JavaScript</h4>
+<ol>
+    <li><strong>setTimeout() & setInterval()</strong> - These are built-in functions for scheduling asynchronous execution of code after a specified delay or at regular intervals.</li>
+    <li><strong>fetch()</strong> - A modern interface (alternative to XMLHttpRequest) for fetching resources (such as JSON, HTML, or images) across the network.</li>
+    <li><strong>XMLHttpRequest()</strong> - XMLHttpRequest is an older API used for making HTTP requests from the browser.</li>
+    <li><strong>async/await</strong> - It provides syntactic sugar over Promises, making asynchronous code look and behave more like synchronous code.</li>
+    <li><strong>Promise()</strong> - Promises provide a way to handle asynchronous operations more cleanly and avoid callback hell. Promises represent a value that may be available now, in the future, or never.</li>
+</ol>
