@@ -66,7 +66,7 @@
 
 //-------------------------------------------------------------
 
-// let someText = "Mitochondria refers to cellular organelles found in most eukaryotic organisms. Mitochondria are often referred to as the 'powerhouses of the cell' because they generate most of the cell's supply of adenosine triphosphate (ATP), which is used as a source of chemical energy.";
+// let someText = "Mitochondria refers to cellular organelles found in most eukaryotic organisms. Mitochondria are often referred to as the 'powerhouses of the cell' because they generate most of the cell's supply of adenosine triphosphate (ATP), which is used as the source of chemical energy.";
 // console.log(someText.slice(13));
 // console.log(someText.slice(5,25));
 // console.log(someText.slice(-45));
