@@ -24,7 +24,7 @@
 // console.log(car.carName, car.carRegNo, car.owner);
 // car.startEngine();
 
-//-------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 
 // Define the Vehicle constructor function
 // function Vehicle() {
@@ -45,7 +45,7 @@
 //     console.log(`${key} : ${vehicle[key]}`);
 // }
 
-//--------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 
 // Define the object constructor
 // function Car(make, model) {
@@ -64,7 +64,7 @@
 // car1.startEngine(); // Output: Starting the engine of Toyota Camry
 // car2.startEngine(); // Output: Starting the engine of Honda Civic
 
-//---------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
 
 // function Car(modelName, engineTest) {
 //     this.modelName = modelName;
