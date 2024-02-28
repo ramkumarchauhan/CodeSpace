@@ -1,57 +1,69 @@
 <h1>Javascript Tutorial</h1>
 
-<h4>Day_01. Basics</h4>
-    <p>- console.log() --> Output in console</p>
-    <p>- Variable declaration - let, var, const</p>
-    <p>- Data Types - numbers, strings, booleans, null, undefined</p>
-    <p>- Condiotionals - if, if-else, mutli-conditional if-else</p>
-    <p>- Loops - while, do-while, for loops --> Lopps continue executing block of code until a termination condition meets.</p>
-    <p>- Iterators - for...of, for...in --> Iterators on each available element of array or object</p>
+<h3>Day_01. Basics</h3>
+<ul>
+    <li>- <code>console.log()</code> --> Output in console</li>
+    <li>- Variable declaration - <code>let</code>, <code>var</code>, <code>const</code></li>
+    <li>- Data Types - numbers, strings, booleans, null, undefined</li>
+    <li>- Conditionals - <code>if</code>, <code>if-else</code>, multi-conditional <code>if-else</code></li>
+    <li>- Loops - <code>while</code>, <code>do-while</code>, <code>for</code> loops --> Loops continue executing block of code until a termination condition meets.</li>
+    <li>- Iterators - <code>for...of</code>, <code>for...in</code> --> Iterators on each available element of array or object</li>
+</ul>
 
-<h4>Day_02. String Methods</h4>
-    <p>- concat() -> joins two strings.</p>
-    <p>- charAt(index) -> returns the index number of mentioned character</p>
-    <p>- toUpperCase() -> Change all leters to Capital case.</p>
-    <p>- toLowerCase() -> Change all leters to Small case.</p>
-    <p>- trim() -> Removes whitespace from both ends of a string.</p>
-    <p>- split(",") -> Splits a string into an array of substrings based on the specified separator.</p>
-    <p>- replace(oldValue, newValue) & replaceAll(oldVlaue, newValue) -> Returns a new string replacing old value with new one.</p>
-    <p>- includes(searchWord) -> Determines whether one string may be found within another string</p>
-    <p>- startsWith(searchWord) -> Checks if a string starts with the specified string.</p>
-    <p>- endsWith(searchWord) -> Checks if a string ends with the specified string.</p>
-    <p>- sllice(startIndex, endIndex) -> Extracts a section of a string and returns it as a new string.</p>
+<h3>Day_02. String Methods</h3>
+<ul>
+    <li>- <code>concat()</code> -> joins two strings.</li>
+    <li>- <code>charAt(index)</code> -> returns the index number of mentioned character</li>
+    <li>- <code>toUpperCase()</code> -> Change all letters to Capital case.</li>
+    <li>- <code>toLowerCase()</code> -> Change all letters to Small case.</li>
+    <li>- <code>trim()</code> -> Removes whitespace from both ends of a string.</li>
+    <li>- <code>split(",")</code> -> Splits a string into an array of substrings based on the specified separator.</li>
+    <li>- <code>replace(oldValue, newValue)</code> & <code>replaceAll(oldValue, newValue)</code> -> Returns a new string replacing old value with new one.</li>
+    <li>- <code>includes(searchWord)</code> -> Determines whether one string may be found within another string</li>
+    <li>- <code>startsWith(searchWord)</code> -> Checks if a string starts with the specified string.</li>
+    <li>- <code>endsWith(searchWord)</code> -> Checks if a string ends with the specified string.</li>
+    <li>- <code>slice(startIndex, endIndex)</code> -> Extracts a section of a string and returns it as a new string.</li>
+</ul>
 
-<h4>Day_03. Array & Array Methods</h4>
-    <p>- push() -> Adds one or more elements to the end of an array and returns the new length of the array.</p>
-    <p>- pop() -> Removes the last element from an array and returns that element.</p>
-    <p>- unshift() -> Inserts the given values to the beginning of an array-like object.</p>
-    <p>- shift() -> Removes the first element from an array.</p>
-    <p>- concat() -> Returns a new array that combines the elements of the original array with other arrays or values.</p>
-    <p>- reverse() -> Reverses an array in place and returns the reference to the same array.</p>
-    <p>- sort() -> Sorts the elements as strings by default and returns the reference to the same array.</p>
-    <p>- toString() -> Returns a string representing the object.</p>
-    <p>- slice() -> array.splice(start, number of elements in the array to remove from start, elements to add to the array beginning from the start index,item2,...)</p>
-    <p>- splice() -> Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
-    <p>- join() -> Joins the array’s items into a string and returns that string.</p>
-    <p>- forEach() -> Executes a callback function once for each array element.</p>
-    <p>- map() -> Creates a new array with the results of calling a provided function on every element in the calling array.</p>
-    <p>- filter() -> Creates a new array with all elements that pass the test implemented by the provided function.</p>
+<h3>Day_03. Array & Array Methods</h3>
+<ul>
+    <li>- <code>push()</code> -> Adds one or more elements to the end of an array and returns the new length of the array.</li>
+    <li>- <code>pop()</code> -> Removes the last element from an array and returns that element.</li>
+    <li>- <code>unshift()</code> -> Inserts the given values to the beginning of an array-like object.</li>
+    <li>- <code>shift()</code> -> Removes the first element from an array.</li>
+    <li>- <code>concat()</code> -> Returns a new array that combines the elements of the original array with other arrays or values.</li>
+    <li>- <code>reverse()</code> -> Reverses an array in place and returns the reference to the same array.</li>
+    <li>- <code>sort()</code> -> Sorts the elements as strings by default and returns the reference to the same array.</li>
+    <li>- <code>toString()</code> -> Returns a string representing the object.</li>
+    <li>- <code>slice()</code> -> <code>array.splice(start, number of elements in the array to remove from start, elements to add to the array beginning from the start index,item2,...)</code></li>
+    <li>- <code>splice()</code> -> Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</li>
+    <li>- <code>join()</code> -> Joins the array’s items into a string and returns that string.</li>
+    <li>- <code>forEach()</code> -> Executes a callback function once for each array element.</li>
+    <li>- <code>map()</code> -> Creates a new array with the results of calling a provided function on every element in the calling array.</li>
+    <li>- <code>filter()</code> -> Creates a new array with all elements that pass the test implemented by the provided function.</li>
+</ul>
 
-<h4>Day_04. Objects-</h4>
-    <p>1. Object Declaration using-</p>
-        <p>- Object Literal</p>
-        <p>- Constructor Function</p>
-    <p>2. Accessing object's properties</p>
-    <p>3. 'this' keyword</p>
+<h3>Day_04. Objects-</h3>
+<ol>
+    <li>Object Declaration using-</li>
+    <ul>
+        <li>- Object Literal</li>
+        <li>- Constructor Function</li>
+    </ul>
+    <li>Accessing object's properties</li>
+    <li>'this' keyword</li>
+</ol>
 
-<h4>Day_05. ES6 features-</h4>
-    <p>- Arrow function</p>
-    <p>- Rest Parameter ->Used to collect multiple arguments into a single array parameter. It allows functions to accept an indefinite number of arguments, primarily   used in function declarations.</p>
-    <p>- Spread Syntax -> Used for Destructuring. It can expand iterable objects into multiple elements.</p>
-    <p>- Template literals or String interpolation -> Allows for easier string interpolation and multiline strings using backticks (`) and ${}.</p>
-    <p>- Destructuring Assignment -> Destructuring allows for extracting values from arrays or properties from objects into distinct
+<h3>Day_05. ES6 features-</h3>
+<ul>
+    <li>- Arrow function</li>
+    <li>- Rest Parameter ->Used to collect multiple arguments into a single array parameter. It allows functions to accept an indefinite number of arguments, primarily used in function declarations.</li>
+    <li>- Spread Syntax -> Used for Destructuring. It can expand iterable objects into multiple elements.</li>
+    <li>- Template literals or String interpolation -> Allows for easier string interpolation and multiline strings using backticks (`) and ${}.</li>
+    <li>- Destructuring Assignment -> Destructuring allows for extracting values from arrays or properties from objects into distinct variables.</li>
+</ul>
 
-<h4>Asynchronous JavaScript</h4>
+<h3>Asynchronous JavaScript</h3>
 <ol>
     <li><strong>setTimeout() & setInterval()</strong> - These are built-in functions for scheduling asynchronous execution of code after a specified delay or at regular intervals.</li>
     <li><strong>fetch()</strong> - A modern interface (alternative to XMLHttpRequest) for fetching resources (such as JSON, HTML, or images) across the network.</li>
