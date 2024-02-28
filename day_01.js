@@ -147,7 +147,6 @@
 //     price: 45.08,
 //     pubYear : 2018
 // }
-
 // for (const key in bookDetails){
 //     console.log(`${key} : ${bookDetails[key]}`);
 // }
