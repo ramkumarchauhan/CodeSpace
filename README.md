@@ -48,5 +48,5 @@
     <p>- Arrow function</p>
     <p>- Rest Parameter ->Used to collect multiple arguments into a single array parameter. It allows functions to accept an indefinite number of arguments, primarily   used in function declarations.</p>
     <p>- Spread Syntax -> Used for Destructuring. It can expand iterable objects into multiple elements.</p>
-    <p>- Template literals or String interpolation -> Allows for easier string interpolation and multiline strings using backticks (\`) and \${}.</p>
+    <p>- Template literals or String interpolation -> Allows for easier string interpolation and multiline strings using backticks (`) and ${}.</p>
     <p>- Destructuring Assignment -> Destructuring allows for extracting values from arrays or properties from objects into distinct
