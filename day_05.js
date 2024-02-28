@@ -20,7 +20,7 @@
 // greet("Shyam")
 // greet("Gojo")
 
-//-------------------------------------------------Rest Parameter
+//------------------------------------------------- Rest Parameter
 
 // function evenNumbers(...num){
 //     return num.reduce((acc,curr)=>acc+curr);
