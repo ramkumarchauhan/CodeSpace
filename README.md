@@ -36,3 +36,10 @@ Day_03. Array & Array Methods
     - forEach() -> Executes a callback function once for each array element.
     - map() -> Creates a new array with the results of calling a provided function on every element in the calling array.
     - filter() -> Creates a new array with all elements that pass the test implemented by the provided function.
+
+Day_04. Objects-
+        1. Object Declaration using-
+            - Object Literal
+            - Constructor Function
+        2. Accessing object's properties
+        3. 'this' keyword
