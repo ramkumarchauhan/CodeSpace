@@ -1,4 +1,4 @@
-Javascript Tutorial-
+<h1>Javascript Tutorial</h1>
 
 Day_01. Basics
     - console.log() --> Output in console
