@@ -72,7 +72,7 @@
     <li><code>Promise()</code> - Promises provide a way to handle asynchronous operations more cleanly and avoid callback hell. Promises represent a value that may be available now, in the future, or never.</li>
 </ol>
 
-<h3>Day_07. DOM Manipulation</h3>
+<h3>Day_07. DOM Manipulation - Part - 1</h3>
 <ul>
   <li><h>Accessing DOM Elements</h></li>
   <ul>
