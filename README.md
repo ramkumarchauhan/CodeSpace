@@ -71,3 +71,68 @@
     <li><strong>async/await</strong> - It provides syntactic sugar over Promises, making asynchronous code look and behave more like synchronous code.</li>
     <li><code>Promise()</code> - Promises provide a way to handle asynchronous operations more cleanly and avoid callback hell. Promises represent a value that may be available now, in the future, or never.</li>
 </ol>
+
+<h3>Day_07. DOM Manipulation</h3>
+<ul>
+  <li><h>Accessing DOM Elements</h></li>
+  <ul>
+    <li><h>getElementById:</h> Retrieves an element by its ID attribute.</li>
+    <li><h>getElementsByClassName:</h> Retrieves elements by their class name.</li>
+    <li><h>getElementsByTagName:</h> Retrieves elements by their tag name.</li>
+    <li><h>querySelector:</h> Retrieves the first element that matches a CSS selector.</li>
+    <li><h>querySelectorAll:</h> Retrieves all elements that match a CSS selector.</li>
+  </ul>
+
+  <li><h>Modifying Element Content</h></li>
+  <ul>
+    <li><h>innerHTML:</h> Sets or gets the HTML content of an element.</li>
+    <li><h>textContent:</h> Sets or gets the text content of an element.</li>
+    <li><h>innerText:</h> Similar to textContent, but it does not return the text content of hidden elements.</li>
+  </ul>
+
+  <li><h>Manipulating Attributes</h></li>
+  <ul>
+    <li><h>getAttribute:</h> Retrieves the value of the specified attribute of an element.</li>
+    <li><h>setAttribute:</h> Sets the value of the specified attribute of an element.</li>
+    <li><h>removeAttribute:</h> Removes the specified attribute from an element.</li>
+  </ul>
+
+  <li><h>Creating and Modifying Elements</h></li>
+  <ul>
+    <li><h>createElement:</h> Creates a new element node.</li>
+    <li><h>createTextNode:</h> Creates a new text node.</li>
+    <li><h>appendChild:</h> Appends a child node to an element.</li>
+    <li><h>removeChild:</h> Removes a child node from an element.</li>
+  </ul>
+
+  <li><h>Styling Elements</h></li>
+  <ul>
+    <li><h>style.property:</h> Allows direct manipulation of CSS styles.</li>
+    <li><h>classList:</h> Allows adding, removing, toggling, and checking classes on an element.</li>
+  </ul>
+
+  <li><h>Event Handling</h></li>
+  <ul>
+    <li><h>addEventListener:</h> Attaches an event handler to an element.</li>
+    <li><h>removeEventListener:</h> Removes an event handler from an element.</li>
+    <li><h>onclick, onmouseover, onkeydown, etc.:</h> Inline event handlers.</li>
+  </ul>
+
+  <li><h>Traversal and Navigation</h></li>
+  <ul>
+    <li><h>parentNode:</h> Returns the parent node of an element.</li>
+    <li><h>childNodes:</h> Returns a collection of child nodes of an element.</li>
+    <li><h>firstChild, lastChild:</h> Returns the first/last child node of an element.</li>
+    <li><h>nextSibling, previousSibling:</h> Returns the next/previous sibling node of an element.</li>
+    <li><h>querySelector, querySelectorAll:</h> Can be used for more complex traversal based on CSS selectors.</li>
+  </ul>
+
+  <li><h>Document Structure Manipulation</h></li>
+  <ul>
+    <li><h>document.createElement:</h> Creates a new element.</li>
+    <li><h>element.appendChild:</h> Adds a new child node to an element.</li>
+    <li><h>element.removeChild:</h> Removes a child node from an element.</li>
+    <li><h>element.insertBefore:</h> Inserts a new node before an existing node.</li>
+  </ul>
+</ul>
+
