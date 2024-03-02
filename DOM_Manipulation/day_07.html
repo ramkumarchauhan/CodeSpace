@@ -1,0 +1,83 @@
+<!-- 
+  1. Accessing DOM Elements:
+
+     - getElementById(): Retrieves an element by its ID attribute.
+     - getElementsByClassName(): Retrieves elements by their class name, returns a collection, not a single element.
+     - getElementsByTagName(): Retrieves elements by their tag name.
+     
+  2. Creating and Modifying Elements:
+     - createElement(): Creates a new element node.
+     - createTextNode(): Creates a new text node.
+     - appendChild(): Appends a child node to an element.
+     - removeChild(): Removes a child node from an element.
+
+  3. Document Structure Manipulation:
+
+     - document.createElement(): Creates a new element.
+     - element.appendChild(): Adds a new child node to an element.
+     - element.removeChild(): Removes a child node from an element.
+     - element.insertBefore(): Inserts a new node before an existing node. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Part -1</title>
+</head>
+
+<body>
+
+  <body>
+    <div class="myDiv">Creating a new element and a textNode that contains some content in it. The newly created tag 'p' is then added to this div.
+      <p id = 'para1'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae voluptates molestias soluta illo excepturi hic. Voluptatum ducimus ut aspernatur excepturi, dolorum rerum esse corporis officiis odio optio saepe delectus!
+      </p>
+      <hr>
+    </div>
+    <script>
+      // const myDiv = document.getElementsByTagName('div')[0];
+      // const newElement = document.createElement('p');  
+      // const textNode = document.createTextNode("This is a paragraph.");  
+      // newElement.appendChild(textNode);  
+      // myDiv.appendChild(newElement);
+
+      //------------------------------------------------------------------
+
+      // const myDiv = document.getElementsByClassName('myDiv')[0];
+      // const greetelement = document.createElement('h1');
+      // const greetText = document.createTextNode("Konichiwa");
+
+      //------------------------------------------------------------------
+
+      // const para1 = document.getElementById('para1');
+      // const newText = document.createTextNode("Additional text added to the para1.");
+      // para1.append(newText);
+
+      //------------------------------------------------------------------
+
+      // const myDiv = document.getElementsByClassName('myDiv')[0]; 
+      // const imgDesc = document.createElement('p');
+      // const paraText = document.createTextNode("This is the description about the image.");
+      // imgDesc.appendChild(paraText);
+      // myDiv.appendChild(imgDesc);
+
+      //------------------------------------------------------------------    
+      
+      // const myDiv = document.getElementsByClassName('myDiv')[0]; 
+      // const profileImage = document.createElement('img');
+      // profileImage.src = "#";
+      // profileImage.alt = "This is the image alt text.";
+      // myDiv.appendChild(profileImage);
+
+      // const imgDesc = document.createElement('p');
+      // const paraText = document.createTextNode("This is added before the image.");
+      // imgDesc.appendChild(paraText);
+      // myDiv.insertBefore(paraText,profileImage);
+
+    </script>
+  </body>
+  
+
+</html>

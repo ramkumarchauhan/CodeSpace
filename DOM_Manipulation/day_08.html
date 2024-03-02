@@ -1,0 +1,32 @@
+<!-- 
+    1. Modifying Element Content:
+        - innerHTML: Sets or gets the HTML content of an element.
+        - textContent: Sets or gets the text content of an element.
+        - innerText: Similar to textContent, but it does not return the text content of hidden elements. 
+    
+    2. Styling Elements:
+        - style.property: Allows direct manipulation of CSS styles.
+        - classList: Allows adding, removing, toggling, and checking classes on an element.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="example"></div>
+    <hr>
+    <p id="greet"></p>
+
+    <script>
+        const exmp = document.getElementsByClassName('example');
+        const para = exmp.innerHTML = "<p>Hello, It uses innerHTML.</p>";
+        document.write(para);
+
+        const greetText = document.getElementById('greet');
+        greetText.innerText = "Hello, It's Ram.";
+    </script>
+</body>
+</html>
