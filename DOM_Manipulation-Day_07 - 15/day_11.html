@@ -1,4 +1,15 @@
-<!--  -->
+<!-- 
+    navigator object-
+    - The "navigator" object in JavaScript represents the "browser environment" and provides information about the browser. It contains various properties and methods that allow web applications to interact with the browser and obtain information about the user's environment. Some common properties and methods of the navigator object include:
+
+    navigator methods-
+    - navigator.userAgent: Returns the user-agent string for the current browser.
+    - navigator.language: Returns the preferred language of the user's browser.
+    - navigator.cookieEnabled: Indicates whether cookies are enabled in the browser.
+    - navigator.onLine: Indicates whether the browser is online or offline.
+    - navigator.platform: Returns the platform on which the browser is running (e.g., "Win32", "MacIntel", "Linux x86_64").
+    - navigator.geolocation: Provides access to the Geolocation API for obtaining the user's geographic location.
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +19,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        document.writeln("UserAgent : "+navigator.userAgent);
+        document.writeln("<br>Browser language : "+navigator.language);
+        document.writeln("<br>Cookies enabled : "+navigator.cookieEnabled);
+        document.writeln("<br>User online : "+navigator.onLine);
+        document.writeln("<br>System platform : "+navigator.platform);
+
+        navigator.geolocation.getCurrentPosition(position=>{
+            document.writeln("Lattitude: "+ position.coords.lattitude);
+            document.writeln("<br>Longitude : "+ position.coords.longitude);
+        },error=>{
+            console.log("error");
+        });
+
+    </script>
 </body>
 </html>
