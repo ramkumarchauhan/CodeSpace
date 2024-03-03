@@ -150,3 +150,14 @@
     <li><code>addEventListener(event, function)</code>-> Attaches an event handler to an element. 'on' is not included when events are attached by using <code>addEventListener()</code>.</li>
     <li><code>removeEventListener(event, function)</code>-> Removes an event handler from an element.</li>
 </ul>
+
+<h3>Day_11. Navigator Object </h3>
+<p>The "navigator" object in JavaScript represents the "browser environment" and provides information about the browser.</p>
+<ul>
+    <li><code>navigator.userAgent</code>: Returns the user-agent string for the current browser.</li>
+    <li><code>navigator.language</code>: Returns the preferred language of the user's browser.</li>
+    <li><code>navigator.cookieEnabled</code>: Indicates whether cookies are enabled in the browser.</li>
+    <li><code>navigator.onLine</code>: Indicates whether the browser is online or offline.</li>
+    <li><code>navigator.platform</code>: Returns the platform on which the browser is running (e.g., "Win32", "MacIntel", "Linux x86_64").</li>
+    <li><code>navigator.geolocation</code>: Provides access to the Geolocation API for obtaining the user's geographic location.</li>
+</ul>
