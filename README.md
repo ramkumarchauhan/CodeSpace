@@ -161,3 +161,12 @@
     <li><code>navigator.platform</code>: Returns the platform on which the browser is running (e.g., "Win32", "MacIntel", "Linux x86_64").</li>
     <li><code>navigator.geolocation</code>: Provides access to the Geolocation API for obtaining the user's geographic location.</li>
 </ul>
+
+<h3>Day_12. Project - 1 Weather App </h3>
+<p>It fetches data from an api, returns the weather data for the current location and lists following information-</p>
+<ul>
+    <li>Temperature in celsius</li>
+    <li>Humidity in %</li>
+    <li>Wind speed in m/s</li>
+    <li>Weather Description</li>
+</ul>
