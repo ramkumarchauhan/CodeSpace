@@ -1,0 +1,74 @@
+<!-- Weather App -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .main {
+            text-align: center;
+            align-items: center;
+        }
+        .infoDivBg{
+            width: 270px;
+            background-color: rgb(169, 223, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Weather App</h1>
+        <h3>Weather at your location</h3>
+        <div class="infoDiv">
+            <p id="temp"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <p id="weatherDescription"></p>            
+        </div>
+        <button id="search">Check Weather</button>
+    </div>
+
+    <script>
+        document.querySelector('#search').addEventListener('click', function () {
+            const infoDiv = document.querySelector('.infoDiv');
+            infoDiv.classList.add('infoDivBg');
+
+            let latitude, longitude;
+            navigator.geolocation.getCurrentPosition(position => {
+                latitude = position.coords.latitude;
+                longitude = position.coords.longitude;
+
+                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=77a39073b8f756ce0057d015b92ee889`)
+                    .then(res => {
+                        return res.json();
+                    })
+                    .then(data => {
+                        
+                        const temperatureKelvin = data.main.temp;
+                        const temperatureCelsius = temperatureKelvin - 273.15;
+                        const humidity = data.main.humidity;
+                        const windSpeed = data.wind.speed;
+                        const weatherDescription = data.weather[0].description;
+
+                        document.getElementById("temp").textContent = `Temperature: ${temperatureCelsius.toFixed(2)} °C`;
+                        document.getElementById("humidity").textContent = `Humidity: ${humidity}%`;
+                        document.getElementById("wind").textContent = `Wind: ${windSpeed}m/s`;
+                        document.getElementById("weatherDescription").textContent = `Weather Description: ${weatherDescription}`;
+                    })
+                    .catch(error => console.error("Error fetching data:", error));
+            }, error => {
+                console.error("Error fetching weather data:", error);
+            });
+        });
+    </script>
+</body>
+
+
+</html>
