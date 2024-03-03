@@ -1,0 +1,147 @@
+<!-- 
+    0. querySelector() & querySelectorAll() 
+    Event Handling-
+        1. Mouse Events:
+            - onclick: Fired when a pointing device button (such as a mouse's primary button) is pressed and released on an element.
+            - ondblclick: Fired when a pointing device button (such as a mouse's primary button) is clicked twice on an element.
+            - onmouseenter: Fired when the pointer enters the boundaries of an element.
+            - onmouseleave: Fired when the pointer leaves the boundaries of an element.
+            - onmouseover: Fired when the pointer enters the boundaries of an element or one of its descendants.
+            - onmouseout: Fired when the pointer leaves the boundaries of an element or one of its descendants.
+            - onmousedown: Fired when a pointing device button is pressed down on an element.
+            - onmouseup: Fired when a pointing device button is released over an element.
+            - onmousemove: Fired when the pointer is moved while it is over an element.
+            - oncontextmenu: Fired when the right mouse button is clicked on an element, triggering the browser's context menu.
+        2. Keyboard Events:
+            - oninput: Fired when the value of an <input>, <select>, or <textarea> element is changed by the user.
+            - onchange: Fired when the value of an <input>, <select>, or <textarea> element is changed and then loses focus.
+            - onfocus: Fired when an element gains focus.
+            - onblur: Fired when an element loses focus.
+            - onkeydown: Fired when a key is pressed down.
+            - onkeyup: Fired when a key is released.
+            - onkeypress: Fired when a key that produces a character value is pressed down. (Note: Deprecated in favor of keydown and keyup for most use cases.)
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        #btn, #btn1, #btn2 {
+            font-size: 20px;
+            background-color: aquamarine;
+        }
+
+        .hideBtn {
+            display: none;
+        }
+        .box1{
+            background-color: rgb(230, 177, 65);
+            height: 100px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myDiv"></div>
+    <button type="button" id="btn" onclick="alrtMsg()">Click Me</button>
+    <button type="button" id="btn1" ondblclick="doubleClick()">Double Click me</button>
+    <button type="button" id="btn1" onmouseenter="mouseEnter()">Mouse enter</button>
+    <button type="button" id="btn1" onmouseleave="mouseLeft()">Mouse left</button>
+    <button type="button" id="btn1" onmouseover="mouseOver()">Mouse over</button>
+    <button type="button" id="btn1" onmouseout="mouseOut()">Mouse out</button>
+    <button type="button" id="btn1" onmousedown="mouseDown()">Mouse Down</button>
+    <button type="button" id="btn1" onmouseup="mouseUp()">Mouse Up</button>
+    <p onmouseup="mouseMove()">Mouse Move. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, exercitationem!</p>
+    <p oncontextmenu="contextMenu()">On context menu. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, exercitationem!</p>
+
+    <form>
+        <input type="text" name="" id="userName" placeholder="User Name" oninput="upperCase()"> <br>
+        <input type="text" name="" id="email" placeholder="Email" onchange="lowerCase()"> <br>
+        <input type="text" name="" id="mobno" placeholder="mobno" onfocus="redBg()" onblur="resetBg()"> <br>
+        <input type="text" name="" id="keydown" placeholder="Key Down" onkeydown="keydownHandler()"> <br>
+        <input type="text" name="" id="keyup" placeholder="Key Up" onkeyup="keyupHandler()"> <br>
+        <input type="text" name="" id="keypress" placeholder="Key Press" onkeypress="keypressHaandler()"> <br>
+    </form>
+
+    <script>
+        function alrtMsg() {
+            alert("Button CLicked.");
+            const mybtn = document.querySelector('#btn');
+            mybtn.classList.add('hideBtn');
+        }
+        function doubleClick(){
+            const paraElement = document.createElement("p");
+            const content = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, aperiam!");
+            paraElement.appendChild(content);
+            document.body.appendChild(paraElement);
+        }
+        function mouseEnter(){
+            document.write("Mouse entered.");
+        }
+        function mouseLeft(){
+            document.write("Mouse Left.");
+        }
+        function mouseOver(){
+            confirm("Mouse over.");
+        }
+        function mouseOut(){
+            confirm("Mouse out.");
+        }
+        function mouseDown(){
+            confirm("Mouse Down.");
+        }
+        function mouseUp(){
+            confirm("Mouse Up.");
+        }
+        function mouseMove(){
+            const myDiv = document.querySelector('.myDiv');
+            myDiv.classList.add("box1");
+        }
+        function contextMenu(){
+            alert("Right button clicked.");
+        }
+
+        //--------------------------------------------------------
+
+        function upperCase(){
+            const userInput = document.querySelector('#userName');
+            const userName = userInput.value;
+            const upperCased = userName.toUpperCase();
+            userInput.value = upperCased;
+        }
+
+        function lowerCase(){
+            const emailField = document.querySelector('#email');
+            const email = emailField.value;
+            const lowerCased = email.toLowerCase();
+            emailField.value = lowerCased;
+        }
+        function redBg(){
+            const userField = document.querySelector('#mobno');
+            userField.style.backgroundColor = "red";
+        }
+        function resetBg(){
+            const userField = document.querySelector('#mobno');
+            userField.style.backgroundColor = "";
+        }
+        function keydownHandler(){
+            alert("Key Down.");
+        }
+        function keyupHandler(){
+            alert("Key Up");
+        }
+        function keypressHaandler(){
+            alert("Some Key Preesed.")
+        }
+        
+    </script>
+</body>
+
+</html>
