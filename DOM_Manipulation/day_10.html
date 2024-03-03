@@ -1,20 +1,67 @@
 <!-- 
     Event Handlers-
         1. addEventListener(event, function): Attaches an event handler to an element. 'on' is not included when events are attached by using addEventListener().
-        2. removeEventListener(event, function): Removes an event handler from an element. -->
+        2. removeEventListener(event, function): Removes an event handler from an element. 
+        Note : querySelectorAll() - It returns a NodeList, which is an array-like object containing all the selected elements.
+    -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Handlers</title>
+    <style>
+        #myForm{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <form id="myForm">
+        <input type="text" id="name" class="clearData" placeholder="Enter name"> <br>
+        <input type="email" id="email" class="clearData" placeholder="Enter email" autocomplete="off"> <br>
+        <input type="date" class="clearData" id="date"> <br>
+        <input type="radio" name="gender" class="clearData" id="male">Male
+        <input type="radio" name="gender" class="clearData" id="female">Female <br>
+        <input type="button" id="submit" value="Submit">
+        <input type="button" id="reset" value="Reset">
+    </form>
 
     <script>
-        
+        document.querySelector('#name').addEventListener('input',function(){
+            const inputName = this.value;
+            this.value =  inputName.toUpperCase();
+        });
+
+        document.querySelector('#email').addEventListener('change',lowerCase);
+        function lowerCase(){
+            const email = document.getElementById('email');
+            const emailVal = email.value;
+            email.value = emailVal.toLowerCase();
+        };
+
+        document.querySelector('#date').addEventListener('focus',function(){
+            this.style.backgroundColor = "blue";
+        });
+        document.querySelector('#date').addEventListener('blur',function(){
+            this.style.backgroundColor = "";
+        });
+
+        document.getElementById('submit').addEventListener('click',function(){
+            alert("Form Submitted.");
+        });
+        document.getElementById('reset').addEventListener('click',function(){
+            const formData = document.querySelectorAll('.clearData');
+            formData.forEach((inputData)=>{
+                inputData.value = "";
+            });
+
+            const radioButtons =  document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach((button)=>{
+                button.checked = false;
+            })
+        });
     </script>
 </body>
 </html>
