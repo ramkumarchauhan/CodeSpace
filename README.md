@@ -111,3 +111,42 @@
   <li><code>style.property</code>-> Allows direct manipulation of CSS styles.</li>
   <li><code>classList</code>-> Allows adding, removing, toggling, and checking classes on an element.</li>
 </ul>
+
+<h3>Day_09. DOM Manipulation - Part - 3</h3>
+
+<strong>Event Handling:</strong>
+<ul>
+    <li><strong>Mouse Events:</strong>
+    <ul>
+        <li><code>onclick</code>-> Fired when a pointing device button (such as a mouse's primary button) is pressed and released on an element.</li>
+        <li><code>ondblclick</code>-> Fired when a pointing device button (such as a mouse's primary button) is clicked twice on an element.</li>
+        <li><code>onmouseenter</code>-> Fired when the pointer enters the boundaries of an element.</li>
+        <li><code>onmouseleave</code>-> Fired when the pointer leaves the boundaries of an element.</li>
+        <li><code>onmouseover</code>-> Fired when the pointer enters the boundaries of an element or one of its descendants.</li>
+        <li><code>onmouseout</code>-> Fired when the pointer leaves the boundaries of an element or one of its descendants.</li>
+        <li><code>onmousedown</code>-> Fired when a pointing device button is pressed down on an element.</li>
+        <li><code>onmouseup</code>-> Fired when a pointing device button is released over an element.</li>
+        <li><code>onmousemove</code>-> Fired when the pointer is moved while it is over an element.</li>
+        <li><code>oncontextmenu</code>-> Fired when the right mouse button is clicked on an element, triggering the browser's context menu.</li>
+    </ul>
+    </li>
+    <li><strong>Keyboard Events:</strong>
+    <ul>
+        <li><code>oninput</code>-> Fired when the value of an &lt;input&gt;, &lt;select&gt;, or &lt;textarea&gt; element is changed by the user.</li>
+        <li><code>onchange</code>-> Fired when the value of an &lt;input&gt;, &lt;select&gt;, or &lt;textarea&gt; element is changed and then loses focus.</li>
+        <li><code>onfocus</code>-> Fired when an element gains focus.</li>
+        <li><code>onblur</code>-> Fired when an element loses focus.</li>
+        <li><code>onkeydown</code>-> Fired when a key is pressed down.</li>
+        <li><code>onkeyup</code>-> Fired when a key is released.</li>
+        <li><code>onkeypress</code>-> Fired when a key that produces a character value is pressed down. (Note: Deprecated in favor of <code>keydown</code> and <code>keyup</code> for most use cases.)</li>
+    </ul>
+    </li>
+</ul>
+
+<h3>Day_10. DOM Manipulation - Part - </h3>
+
+<strong>Event Handlers:</strong>
+<ul>
+    <li><code>addEventListener(event, function)</code>-> Attaches an event handler to an element. 'on' is not included when events are attached by using <code>addEventListener()</code>.</li>
+    <li><code>removeEventListener(event, function)</code>-> Removes an event handler from an element.</li>
+</ul>
