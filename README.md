@@ -73,19 +73,25 @@
 </ol>
 
 <h3>Day_07. DOM Manipulation - Part - 1</h3>
+### 1. Accessing DOM Elements:
 <ul>
-  <li><h>Accessing DOM Elements</h></li>
-  <ul>
-    <li><h>getElementById:</h> Retrieves an element by its ID attribute.</li>
-    <li><h>getElementsByClassName:</h> Retrieves elements by their class name.</li>
-    <li><h>getElementsByTagName:</h> Retrieves elements by their tag name.</li>
-    <li><h>querySelector:</h> Retrieves the first element that matches a CSS selector.</li>
-    <li><h>querySelectorAll:</h> Retrieves all elements that match a CSS selector.</li>
-  </ul>
+  <li><code>getElementById():</code> Retrieves an element by its ID attribute.</li>
+  <li><code>getElementsByClassName():</code> Retrieves elements by their class name, returns a collection, not a single element.</li>
+  <li><code>getElementsByTagName():</code> Retrieves elements by their tag name, returns a collection, not a single element.</li>
+</ul>
 
-  <li><h>Modifying Element Content</h></li>
-  <ul>
-    <li><h>innerHTML:</h> Sets or gets the HTML content of an element.</li>
-    <li><h>textContent:</h> Sets or gets the text content of an element.</li>
-    <li><h>innerText:</h> Similar to textContent, but it does not return the text content of hidden elements.</li>
-  </ul>
+### 2. Creating and Modifying Elements:
+<ul>
+  <li><code>createElement():</code> Creates a new element node.</li>
+  <li><code>createTextNode():</code> Creates a new text node.</li>
+  <li><code>appendChild():</code> Appends a child node to an element.</li>
+  <li><code>removeChild():</code> Removes a child node from an element.</li>
+</ul>
+
+### 3. Document Structure Manipulation:
+<ul>
+  <li><code>document.createElement():</code> Creates a new element.</li>
+  <li><code>element.appendChild():</code> Adds a new child node to an element.</li>
+  <li><code>element.removeChild():</code> Removes a child node from an element.</li>
+  <li><code>element.insertBefore():</code> Inserts a new node before an existing node.</li>
+</ul>
