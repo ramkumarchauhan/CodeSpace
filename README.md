@@ -143,7 +143,7 @@
     </li>
 </ul>
 
-<h3>Day_10. DOM Manipulation - Part - </h3>
+<h3>Day_10. DOM Manipulation - Part - 4 </h3>
 
 <strong>Event Handlers:</strong>
 <ul>
