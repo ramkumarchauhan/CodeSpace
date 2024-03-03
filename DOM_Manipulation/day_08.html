@@ -10,23 +10,83 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .highlight {
+            background-color: aqua;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="example"></div>
-    <hr>
+    <div></div>
     <p id="greet"></p>
+    <p class="styleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eaque!</p>
+    <button id="btn" type="button">Button</button>
+    <hr>
+    <h4>classList Example</h4>
+
+    <div id="myDiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas!</div>
+    <button type="button" onclick="addClass()">Add Highlighter</button>
+    <button type="button" onclick="removeClass()">Remove Highlighter</button>
+    <hr>
+    <button type="button" onclick="toggleClass()">Toggle Highlighter</button>
+    <hr>
+    <button type="button" onclick="checkClass()">Ckeck Highlight</button>
+
+
 
     <script>
-        const exmp = document.getElementsByClassName('example');
-        const para = exmp.innerHTML = "<p>Hello, It uses innerHTML.</p>";
-        document.write(para);
+        // const exmp = document.getElementsByTagName('div');
+        // const para = exmp.innerHTML = "<p>Hello, It uses innerHTML.</p>";
+        // document.write(para);
 
-        const greetText = document.getElementById('greet');
-        greetText.innerText = "Hello, It's Ram.";
+        // const greetText = document.getElementById('greet');
+        // greetText.innerText = "Hello, It's Ram.";
+        // greetText.textContent = "New Text";
+
+        //-----------------------------------------------------------------
+
+        // const styletext = document.getElementsByClassName('styleText');
+        // for(let i = 0; i< styletext.length; i++){
+        //     styletext[i].style.fontSize = '20px';
+        //     styletext[i].style.color = 'red';
+        // }
+
+        // const btn = document.getElementById('btn');
+        // btn.style.backgroundColor = 'green';
+        // btn.style.fontSize = '25px';
+        // btn.style.border = 'none';
+        // btn.style.borderRadius = '20px';
+
+        //-----------------------------------------------------------------
+
+        const myDiv = document.getElementById('myDiv');
+        function addClass() {
+            myDiv.classList.add('highlight');
+        }
+        function removeClass() {
+            myDiv.classList.remove('highlight');
+        }
+        function toggleClass() {
+            myDiv.classList.toggle('highlight');
+        }
+        function checkClass() {
+            if (myDiv.classList.contains('highlight')) {
+                alert('The highlight class is present.');
+            } else {
+                alert('The highlight class is not present.');
+            }
+        }
+
+
+
     </script>
 </body>
+
 </html>
