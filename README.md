@@ -73,6 +73,7 @@
 </ol>
 
 <h3>Day_07. DOM Manipulation - Part - 1</h3>
+
 ### 1. Accessing DOM Elements:
 <ul>
   <li><code>getElementById():</code> Retrieves an element by its ID attribute.</li>
@@ -94,4 +95,19 @@
   <li><code>element.appendChild():</code> Adds a new child node to an element.</li>
   <li><code>element.removeChild():</code> Removes a child node from an element.</li>
   <li><code>element.insertBefore():</code> Inserts a new node before an existing node.</li>
+</ul>
+
+<h3>Day_08. DOM Manipulation - Part - 2</h3>
+
+### 1. Modifying Element Content:
+<ul>
+  <li><code>innerHTML:</code> Sets or gets the HTML content of an element.</li>
+  <li><code>textContent:</code> Sets or gets the text content of an element.</li>
+  <li><code>innerText:</code> Similar to textContent, but it does not return the text content of hidden elements.</li>
+</ul>
+
+### 2. Styling Elements:
+<ul>
+  <li><code>style.property:</code> Allows direct manipulation of CSS styles.</li>
+  <li><code>classList:</code> Allows adding, removing, toggling, and checking classes on an element.</li>
 </ul>
