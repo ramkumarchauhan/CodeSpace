@@ -101,13 +101,13 @@
 
 ### 1. Modifying Element Content:
 <ul>
-  <li><code>innerHTML:</code> Sets or gets the HTML content of an element.</li>
-  <li><code>textContent:</code> Sets or gets the text content of an element.</li>
-  <li><code>innerText:</code> Similar to textContent, but it does not return the text content of hidden elements.</li>
+  <li><code>innerHTML</code>-> Sets or gets the HTML content of an element.</li>
+  <li><code>textContent</code>-> Sets or gets the text content of an element.</li>
+  <li><code>innerText</code>-> Similar to textContent, but it does not return the text content of hidden elements.</li>
 </ul>
 
 ### 2. Styling Elements:
 <ul>
-  <li><code>style.property:</code> Allows direct manipulation of CSS styles.</li>
-  <li><code>classList:</code> Allows adding, removing, toggling, and checking classes on an element.</li>
+  <li><code>style.property</code>-> Allows direct manipulation of CSS styles.</li>
+  <li><code>classList</code>-> Allows adding, removing, toggling, and checking classes on an element.</li>
 </ul>
