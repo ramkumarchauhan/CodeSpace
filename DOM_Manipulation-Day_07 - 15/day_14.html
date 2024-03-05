@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <style>
+        body{
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+        }
+        .todoApp{
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: blueviolet;
+            height: fit-content;
+            width: 250px;
+        }
+        h2{
+            color: aliceblue;
+        }
+        #taskInput{
+            height: 40px;
+            width: 15rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            padding-left: 10px;
+            outline: none;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            color: white;
+            margin: 20px 0;
+            border: none;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #add{
+            background-color: rgb(145, 199, 65);
+        }
+        #remove{
+            background-color: red;
+        }
+        .taskList{
+            height: fit-content;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="todoApp">
+        <h2>Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Add Task...">
+        <button id="add" class="buttons">ADD</button>
+        <button id="remove" class="buttons">REMOVE</button>
+        <div class="taskList"><h3>Your Tasks</h3></div>
+    </div>
+
+
+    <script>
+        const newTask = document.getElementById('taskInput');
+        const addBtn = document.getElementById('add');
+        const removeBtn = document.getElementById('remove');
+        const taskList = document.querySelector('.taskList');
+
+        addBtn.addEventListener('click',function(){
+            const task = newTask.value.trim();
+            if(task !==""){
+               const taskItem =  document.createElement('p');
+               taskItem.textContent = task;
+               taskList.appendChild(taskItem);
+               newTask.value ="";
+
+               // Save tasks to local storage
+                saveTasksToStorage();
+            }
+        });
+
+        removeBtn.addEventListener('click',function(){
+            const tasks = taskList.querySelectorAll('p');
+            if(tasks.length>0){
+                const lastTask =  tasks[tasks.length -1];
+                taskList.removeChild(lastTask);
+
+                // Save tasks to local storage after removing a task
+                saveTasksToStorage();
+            }
+        });
+
+        // Retrieve tasks from local storage on page load
+        window.onload = function() {
+            const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+            if (storedTasks) {
+                storedTasks.forEach(task => {
+                    const taskItem = document.createElement('p');
+                    taskItem.textContent = task;
+                    taskList.appendChild(taskItem);
+                });
+            }
+        };
+
+        // Function to save tasks to local storage
+        function saveTasksToStorage() {
+            const tasks = [];
+            taskList.querySelectorAll('p').forEach(task => {
+                tasks.push(task.textContent);
+            });
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+    </script>    
+</body>
+</html>
