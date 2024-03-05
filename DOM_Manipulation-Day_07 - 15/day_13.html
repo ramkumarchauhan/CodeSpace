@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 150px;
+        }
+        #clear{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            height: 65px;
+            width: 55px;
+        }
+
+        .calculator {
+            /* border: 2px solid black; */
+            background-color: brown;
+            width: fit-content;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        input {
+            height: 60px;
+            width: 205px;
+            margin: 15px 0;
+            background-color: black;
+            color: aliceblue;
+            font-size: 16px;
+            border-radius: 10px;
+
+        }
+
+        button {
+            height: 45px;
+            width: 50px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .row {
+            margin-bottom: 5px;
+        }
+
+        .operator {
+            background-color: greenyellow;
+            width: 110px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <button type="button" id="clear" value="C">C</button>
+        <div class="buttons">
+            <div class="row">
+                <button type="button" class="digit" value="7">7</button>
+                <button type="button" class="digit" value="8">8</button>
+                <button class="digit" value="9">9</button>
+                <button class="operator" value="/">/</button>
+            </div>
+            <div class="row">
+                <button type="button" class="digit" value="4">4</button>
+                <button type="button" class="digit" value="5">5</button>
+                <button class="digit" value="6">6</button>
+                <button class="operator" value="*">*</button>
+            </div>
+            <div class="row">
+                <button type="button" class="digit" value="1">1</button>
+                <button type="button" class="digit" value="2">2</button>
+                <button class="digit" value="3">3</button>
+                <button class="operator" value="-">-</button>
+            </div>
+            <div class="row">
+                <button type="button" class="digit" value="0">0</button>
+                <button type="button" id="decimal" class="digit" value=".">.</button>
+                <button id="result" value="=">=</button>
+                <button class="operator" value="+">+</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        const displayData = document.getElementById('display');
+        const inputDigit = document.querySelectorAll('.digit');
+        inputDigit.forEach((button)=>{
+            button.addEventListener('click',function(){
+                displayData.value += button.value;
+            });
+        });
+
+        const operators = document.querySelectorAll('.operator');
+        operators.forEach((operator)=>{
+            operator.addEventListener('click',function(){
+                displayData.value += operator.value;
+            });
+        });
+
+        const clearBtn = document.getElementById('clear');
+        clearBtn.addEventListener('click',function(){
+            displayData.value = "";
+        });
+
+        const decimal = document.getElementById('decimal');
+        decimal.addEventListener('click',function(){
+            if(!displayData.value.includes('.')){
+                displayData.value += '.';
+            };
+        });
+
+        let total = document.getElementById('result');
+        total.addEventListener('click',function(){
+            let expression = displayData.value;
+        let operand =  expression.split(/[+\-*/]/);  // The backslash \ is used as an escape character to treat the hyphen - literally inside the character class. Without the backslash, - would be interpreted as a range specifier.
+        let optr =  expression.match(/[+\-*/]/)
+
+        const [operand1, operand2] = operand.map(parseFloat);
+        switch(optr[0]){
+            case '+': 
+                displayData.value = operand1 + operand2;
+            break;
+
+            case '-':
+                displayData.value = operand1 - operand2;
+                break;
+            case '*':
+                displayData.value = operand1 * operand2;
+                break;
+            case '/':
+                displayData.value = operand1/operand2;
+                break
+            default:
+                displayData.value = "ERROR";
+        }
+        });
+
+
+    </script>
+</body>
+
+</html>
