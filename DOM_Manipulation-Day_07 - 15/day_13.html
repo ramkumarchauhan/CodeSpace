@@ -123,7 +123,7 @@
 
         let total = document.getElementById('result');
         total.addEventListener('click',function(){
-            let expression = displayData.value;
+        let expression = displayData.value;
         let operand =  expression.split(/[+\-*/]/);  // The backslash \ is used as an escape character to treat the hyphen - literally inside the character class. Without the backslash, - would be interpreted as a range specifier.
         let optr =  expression.match(/[+\-*/]/)
 
