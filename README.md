@@ -170,3 +170,12 @@
     <li>Wind speed in m/s</li>
     <li>Weather Description</li>
 </ul>
+
+<h3>Day_13. Project - 2 Calculator App </h3>
+<p>It performs calculation and returns result as intended lists following components-</p>
+<ul>
+    <li>0-9 buttons</li>
+    <li>operators -> +, -, * and /</li>
+    <li>clear button to clear given expression</li>
+    <li>= button to perdorm calculation on expression.</li>
+</ul>
