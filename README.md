@@ -184,6 +184,6 @@
 <p>It takes tasks from inputbox and adds into the list when clicked on 'ADD' and removes when clicked on 'REMOVE' button, lists following components-</p>
 <ul>
     <li>Input Box</li>
-    <li>Add and Remove task buttons/</li>
-    <li>Task list to show added tasks/li>
+    <li>Add and Remove task buttons</li>
+    <li>Task list to show added tasks</li>
 </ul>
