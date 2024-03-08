@@ -31,3 +31,15 @@
 //     return maxele;
 // });
 // console.log("Max element is : " + maxele);
+
+//------------------Using for...of()
+
+// const array = [3, 23, 45, 2, 1, 56, 43, 32, 34];
+// let maxEle = array[0];
+
+// for (let element of array) {
+//     if(element > maxEle){
+//         maxEle = element;
+//     }
+// }
+// console.log("Max element is : "+ maxEle);
